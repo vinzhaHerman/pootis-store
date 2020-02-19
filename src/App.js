@@ -2,10 +2,12 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.component';
 import Productlist from './components/Productlist.component';
-import Product from './components/Product.component';
+// import Product from './components/Product.component';
 import Detail from './components/Detail.component';
-import Cart from './components/Cart.component';
+import Cart from './components/Cart';
 import Notfound from './components/Notfound.component';
+
+import Modal from './components/modal/Modal.component';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/cart" component={Cart} />
         <Route  component={Notfound} />
       </Switch>
+      <Modal />
     </React.Fragment>
   );
 }
