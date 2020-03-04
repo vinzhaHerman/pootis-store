@@ -21,10 +21,10 @@ class Product extends Component {
                         <div className="view overlay">
                             <img className="card-img-top" src={img} alt="Card cap"></img>
                             <div className="mask rgba-white-slight d-flex justify-content-center align-items-center"
-                                    onClick={() => value.handleDetail(id)}>
-                                        <Link to="/details">
-                                            <button className="btn btn-light btn-primary btn-sm">DETAIL</button>
-                                        </Link>
+                                onClick={() => value.handleDetail(id)}>
+                                <Link to="/details">
+                                    <button className="btn btn-light btn-primary btn-sm">DETAIL</button>
+                                </Link>
                             </div>
                         </div>
 

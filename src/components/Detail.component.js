@@ -34,7 +34,7 @@ class Detail extends Component {
                                                 className="btn btn-warning"
                                                 disabled={inCart?true:false}
                                                 onClick={()=>{
-                                                    value.addToCart(id)
+                                                    value.addToCart(id);
                                                 }}>
                                                     { inCart?"in Cart":"Add to Cart" }
                                             </button>
