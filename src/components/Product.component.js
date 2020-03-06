@@ -41,7 +41,7 @@ class Product extends Component {
 
                 
 
-                        <button type="button" className="btn btn-light-blue btn-sm mb-4"
+                        <button type="button" className="btn btn-warning btn-sm mb-4"
                                 disabled={inCart ? true : false}
                                 onClick={() => {
                                     value.addToCart(id);
