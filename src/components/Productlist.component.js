@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { storeProducts } from '../data';
 import { ProductConsumer } from '../data.context';
 import Product from './Product.component';
+import Carousel from './Carousel.component';
 
 class Productlist extends Component {
     constructor(props){
@@ -18,6 +19,7 @@ class Productlist extends Component {
         return(
             <React.Fragment>
                 <div className="container mt-5 pt-5">
+                    <Carousel />
                     <div className="row justify-content-center">
                         <ProductConsumer>
                             {(value) => {

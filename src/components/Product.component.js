@@ -23,7 +23,7 @@ class Product extends Component {
                             <div className="mask rgba-white-slight d-flex justify-content-center align-items-center"
                                 onClick={() => value.handleDetail(id)}>
                                 <Link to="/details">
-                                    <button className="btn btn-light btn-primary btn-sm">DETAIL</button>
+                                    <button className="btn btn-light btn-primary btn-sm peach-gradient">DETAIL</button>
                                 </Link>
                             </div>
                         </div>
@@ -34,14 +34,14 @@ class Product extends Component {
                             <h4 className="card-title">{title}</h4>
                             <div className="d-flex justify-content-between align-items-center">
                                 <p className="card-text m-0">${price}</p>
-                                <p className="card-text cart-mark">{inCart ? "in cart" : ""}</p>
+                                <p className="card-text cart-mark purple-gradient">{inCart ? "in cart" : ""}</p>
                             </div>
                         </div>
 
 
                 
 
-                        <button type="button" className="btn btn-warning btn-sm mb-4"
+                        <button type="button" className="btn btn-deep-orange btn-sm mb-4"
                                 disabled={inCart ? true : false}
                                 onClick={() => {
                                     value.addToCart(id);

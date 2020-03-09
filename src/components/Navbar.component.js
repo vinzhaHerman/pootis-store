@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 // import logo from '../logo.svg';
 
+import { ProductConsumer } from '../data.context';
+
 class Navbar extends Component {
     render(){
         return(
             
-            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-warning">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-warning peach-gradient">
                 <div className="container">
-                    <Link to="/"><span className="navbar-brand">Pootis</span></Link>
+                    <Link to="/"><span className="navbar-brand">Pootis in Store</span></Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon"></span>
                     </button>
@@ -20,7 +22,14 @@ class Navbar extends Component {
                         </li>
                       </ul>
                       <Link to="/cart" className="ml-auto">
-                        <button className="btn btn-sm btn-light"><i className="fas fa-cart-plus"></i></button>
+                        <ProductConsumer>
+                          {value => {
+                            const { cart } = value;
+                              return(
+                                <button className="btn btn-sm btn-light"><i className="fas fa-cart-plus"></i> ({ cart.length })</button>
+                              )
+                          }}
+                        </ProductConsumer>
                       </Link>
                     </div>
                     

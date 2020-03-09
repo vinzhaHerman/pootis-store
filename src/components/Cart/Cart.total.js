@@ -16,7 +16,7 @@ export default function CartToal({value, history}) {
                         <div>Subtotal: <span className="font-weight-bold">${ cartSubTotal }</span></div>
                         <div>Tax: <span className="font-weight-bold">${ cartTax }</span></div>
                         <hr/>
-                        <div>Total: <span className="font-weight-bold text-warning">${ cartTotal }</span></div>
+                        <div>Total: <span className="font-weight-bold deep-orange-text">${ cartTotal }</span></div>
                     </div>
                 </div>
                 <hr/>

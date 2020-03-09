@@ -20,7 +20,7 @@ class Cart extends Component {
                                     <div className="col-lg-8 col-sm-12 d-flex justify-content-between">
                                         <h1 className="text-muted">Your Cart</h1>
                                         <button className="btn btn-sm btn-danger"
-                                                onClick={() => clearCart()}>clear cart</button>
+                                                onClick={() => clearCart()}><i className="far fa-times-circle"></i> clear cart</button>
                                     </div>
                                 </div>
                                 <div className="row">

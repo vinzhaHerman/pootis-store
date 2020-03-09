@@ -31,7 +31,7 @@ class Detail extends Component {
                                         </Link>
                                         <Link to="/">
                                             <button 
-                                                className="btn btn-warning"
+                                                className="btn btn-warning peach-gradient"
                                                 disabled={inCart?true:false}
                                                 onClick={()=>{
                                                     value.addToCart(id);

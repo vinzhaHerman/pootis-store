@@ -41,7 +41,7 @@ export default class Modal extends Component {
                                     <h5 className="card-title">Item Added!</h5>
                                     <p>{title}</p>
                                     <button className="btn btn-sm" onClick={()=>closeModal()}>Continue Shopping</button>
-                                    <Link to="/cart"><button className="btn btn-primary btn-sm" onClick={()=>closeModal()}>Go to cart</button></Link>
+                                    <Link to="/cart"><button className="btn btn-primary peach-gradient btn-sm" onClick={()=>closeModal()}>Go to cart</button></Link>
                                   </div>
                                 </div>
                             </MDBContainer>
