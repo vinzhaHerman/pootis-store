@@ -1,9 +1,9 @@
 import React from 'react';
-import CartItem from './Cart.item';
+import PaypalBtn from './Paypal.pay';
 
-export default function CartToal({value}) {
+export default function CartToal({value, history}) {
 
-    const { cart, cartSubTotal, cartTax, cartTotal } = value;
+    const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
     
     return(
         <div className="card my-2">
@@ -22,10 +22,8 @@ export default function CartToal({value}) {
                 <hr/>
                 <div className="row">
                     <div className="col-lg-12 col-md-12 col-sm-12">
-                        <div className="d-flex">
-                            <button className="btn btn-light">Back to store</button>
-                            <button className="btn btn-warning">Pay</button>
-                        </div>
+                            {/* <button className="btn btn-warning">Pay</button> */}
+                            <PaypalBtn total={cartTotal} clearCart={clearCart} history={history} />
                     </div>
                 </div>
             </div>
